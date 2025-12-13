@@ -1,0 +1,183 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAFAFA; /* soft neutral background */
+  color: #222; /* dark gray text */
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* pp */
+.profile-pic {
+  width: 178px;
+  height: 150px;
+  object-fit: cover;  /* crop gambar agar pas */
+  margin-bottom: 1.5rem;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #34495E;
+}
+
+.hero h2 span {
+  color: #3498DB;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2C3E50;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #222;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #EEE;
+}
+
+.project-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  color: #2C3E50;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  color: #3498DB;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Dark mode default: off */
+body.dark-mode {
+  background-color: #121212;
+  color: #EEE;
+}
+
+body.dark-mode .section {
+  background-color: #1E1E1E;
+}
+
+body.dark-mode .project-card {
+  background-color: #2A2A2A;
+  color: #EEE;
+}
+
+body.dark-mode footer {
+  background-color: #1E1E1E;
+  color: #EEE;
+}
+
+body.dark-mode .hero {
+  background-color: #1A1A1A;
+  color: #EEE;
+}
+
+body.dark-mode .profile-pic {
+  border-color: #3498DB; /* tetap sama aksen */
+}
+
+body.dark-mode a {
+  color: #3498DB;
+}
+
+/* Toggle button styling */
+#darkModeToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #EEE;
+  color: #2C3E50;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+body.dark-mode #darkModeToggle {
+  background-color: #2C3E50;
+  color: #EEE;
+}
