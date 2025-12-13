@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Art of Infinite</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,15 +14,15 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <!-- <button id="darkModeToggle">🌙</button> -->
+      <button id="darkModeToggle">🌙</button>
       <img src="images/png.png" alt="Profile Photo" class="profile-pic" />
       <h2>Art of <span>Infinite</span></h2>
-      <p>Web developer & designer creating simple, fast, and clean digital experiences.</p>
+      <p class="hero-tagline jp-eng">無限の美学 — Crafting Simple Digital Experiences</p>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <div class="container">
       <h3>About Us</h3>
       <p>
@@ -31,16 +33,16 @@
   
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="section reveal">
     <div class="container">
       <h3>Projects</h3>
       <div class="projects-grid">
-        <div class="project-card">
+        <div class="project-card reveal">
           <img src="projects/Screenshot 2023-07-09 203841.png" alt="Project 1">
           <h4>Project 1</h4>
           <p>A brief description of Project 1 with its key highlights.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card reveal">
           <img src="projects/Screenshot 2023-07-09 204024.png" alt="Project 2">
           <h4>Project 2</h4>
           <p>A brief description of Project 2 focusing on simplicity and usability.</p>
@@ -51,13 +53,15 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:sekarad@gmail.com">email@domain.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">username</a></p>
+  <section id="contact" class="section reveal">
+    <div class="container social-icons">
+      <a href="mailto:sekarad@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/username" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/username" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://x.com/username" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
@@ -65,14 +69,6 @@
       <p>© 2025 Art of Infinite. All rights reserved.</p>
     </div>
   </footer>
-    <script>
-    const toggleBtn = document.getElementById('darkModeToggle');
-    toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        // Ubah ikon tombol
-        toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
-    </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
